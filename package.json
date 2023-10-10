@@ -1,0 +1,50 @@
+{
+  "name": "tailwindcss-wh",
+  "version": "1.0.0",
+  "description": "A Tailwind CSS plugin that provides a shorthand for 'w-x h-x' as 'wh-x'.",
+  "keywords": [
+    "tailwindcss",
+    "tailwindcss-plugin",
+    "width-height",
+    "wh",
+    "square"
+  ],
+  "homepage": "https://github.com/sakanjo/tailwindcss-wh",
+  "bugs": {
+    "url": "https://github.com/sakanjo/tailwindcss-wh/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sakanjo/tailwindcss-wh"
+  },
+  "funding": "https://github.com/sponsors/sakanjo",
+  "license": "MIT",
+  "author": "Salah Kanjo <dev.salah.kanjo@gmail.com> (https://github.com/sakanjo)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --clean --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --watch",
+    "lint": "pnpm run stub && eslint .",
+    "stub": "tsup src/index.ts --format esm",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^1.0.0-beta.24",
+    "bump": "^0.2.5",
+    "eslint": "^8.51.0",
+    "tailwindcss": "^3.3.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
