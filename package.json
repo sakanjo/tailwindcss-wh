@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-wh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Tailwind CSS plugin that provides a shorthand for 'w-x h-x' as 'wh-x'.",
   "keywords": [
     "tailwindcss",
